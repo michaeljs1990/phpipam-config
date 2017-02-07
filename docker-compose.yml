@@ -2,8 +2,6 @@ ipam:
   # Build this locally with the docker file
   # located in this repository
   image: phpipam
-  # Run on first start to setup the mysql db, this is hacky i'll come up with something nice later
-  # entrypoint: java -Dconfig.file=/opt/collins/conf/production.conf -Dhttp.port=9000 -Dlogger.file=/opt/collins/conf/logger.xml -cp /opt/collins/lib/* collins.DbUtil /opt/collins/conf/evolutions/
   ports:
     - 9101:80
   environment:
